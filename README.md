@@ -74,15 +74,25 @@ flowchart LR
 | [CHECKLIST.md](./CHECKLIST.md) | One-page pre-flight before shipping |
 | [SKILL.md](./SKILL.md) | Packaged as a Claude Code skill (open-source it as-is) |
 
-## Open-sourcing this
+## Use it as a Claude Code skill (one command)
 
-Two equally valid forms (it's authored to be both):
-- **As a process** — copy this folder into any repo; it's just Markdown.
-- **As a skill** — [`SKILL.md`](./SKILL.md) is a ready Claude Code skill: drop the
-  folder into `~/.claude/skills/agent-groundwork/` (or a repo's `.claude/skills/`).
+```bash
+git clone https://github.com/anshulixyz/agent-groundwork ~/.claude/skills/agent-groundwork
+```
+That's it. Claude Code auto-discovers the **`agent-groundwork`** skill and invokes it
+when you ask agent-building things (*"help me design an agent", "which framework?",
+"how autonomous should this be?"*). Or say *"use the agent-groundwork skill"*.
 
-MIT licensed; attribute the cited sources. PRs that add measured data or new
-patterns are the whole point.
+**Want a literal slash command?** Copy the bundled wrapper, then type **`/agent-groundwork`**:
+```bash
+cp ~/.claude/skills/agent-groundwork/commands/agent-groundwork.md ~/.claude/commands/
+```
+(Skills are model-invoked; a `/command` is a separate Claude Code feature — so it's an
+opt-in wrapper that runs the same decide-first flow.) See [`SKILL.md`](./SKILL.md).
+
+Also works as a **plain process** — it's just Markdown; copy the folder into any repo
+and read it. MIT licensed; attribute the cited sources. PRs that add measured data or
+new patterns are the whole point.
 
 ## Related
 

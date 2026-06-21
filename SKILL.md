@@ -11,10 +11,28 @@ description: >-
   autonomous should this be".
 ---
 
-# Agent Playbook (skill)
+# Agent Groundwork (skill)
 
 A kickstart for building reliable agents. Core thesis: **most agent failures are
 orchestration failures, not model failures** — so spend your effort on the harness.
+
+## Install (one command)
+```bash
+git clone https://github.com/anshulixyz/agent-groundwork ~/.claude/skills/agent-groundwork
+```
+Project-scoped instead? Clone into `<your-repo>/.claude/skills/agent-groundwork` to
+share it with collaborators via git.
+
+## Invoke
+- **Model-invoked (default):** once installed, Claude auto-loads this skill when you
+  ask agent-building things — *"help me design an agent", "which agent framework?",
+  "how autonomous should this be?"* (it triggers on the `description` above). Just
+  describe what you're building.
+- **Explicit:** say *"use the agent-groundwork skill"*.
+- **As a literal slash command (optional):** copy the bundled wrapper —
+  `cp ~/.claude/skills/agent-groundwork/commands/agent-groundwork.md ~/.claude/commands/`
+  — then type **`/agent-groundwork`** in Claude Code. (Skills are model-invoked; a
+  slash command is a separate Claude Code feature, so it's an opt-in wrapper.)
 
 ## How to drive this skill
 
