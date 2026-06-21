@@ -19,10 +19,13 @@ back with a sentence (or a number).
 - [ ] **Output contract**: schema-validated, **fails closed** to the safe outcome.
 - [ ] **Self-healing**: retry+backoff, fallback chain + circuit breaker, every heal logged.
 - [ ] **HITL**: "escalate to human" is a first-class output with confidence + rationale.
+- [ ] **Guardrails & containment** ([GUARDRAILS-AND-SECURITY.md](./GUARDRAILS-AND-SECURITY.md)): untrusted-data discipline (external text ≠ instructions), least-privilege tools, **no action outside declared scope**, human gate on irreversible actions.
 - [ ] **Secrets**: from env / gitignored `.env`; never logged; not in any shipped artifact.
 
 ## Prove it
 - [ ] **Eval set exists** (state its size + how built; flag small-n / selection-on-test honestly).
+- [ ] **Benchmarked** ([BENCHMARKING.md](./BENCHMARKING.md)): task eval + a relevant public suite for context; multi-run + multi-dimensional (accuracy · cost · latency · safety).
+- [ ] **Red-team suite** for prompt-injection / tool-abuse, gated in CI; attack-success-rate tracked.
 - [ ] **Tested at the real boundary** (HTTP/tool I/O), not just internal functions.
 - [ ] **CI gates**: lint + tests + output/contract check + (if docs exist) docs-sync + UI parse.
 - [ ] **Metrics captured**: success/eval, cost/task, p50/p95 latency, tool-success, HITL rate.

@@ -84,10 +84,18 @@ Build vs reuse:
   - HITL channel:  [<tool/none>]
 Tools (typed):              …
 Output contract (schema):   …  (fail-closed default: …)
-Metrics + targets:          success …, cost …, p95 latency …, HITL rate …
+Containment (least-priv):   tool scopes …; never-exceed rule …; irreversible actions gated by …
+Security / injection:       untrusted-data handling …; red-team suite [yes/no]
+Metrics + targets:          success …, cost …, p95 latency …, HITL rate …, attack-success-rate …
 Top 3 failure modes + guard: …
 Eval set (size, how built): …   ⚠ note small-n / selection-on-test honestly
+Benchmarks:                 task eval …; public suite for context [GAIA/SWE-bench/τ²-bench/BFCL/…]
 ```
+
+> Containment & benchmarking aren't optional extras — see
+> [GUARDRAILS-AND-SECURITY.md](./GUARDRAILS-AND-SECURITY.md) (keep the agent inside
+> its rules) and [BENCHMARKING.md](./BENCHMARKING.md) (measure honestly; a leaderboard
+> isn't your task).
 
 > **Worked example — ClaimLens** (don't copy, contrast): *dynamic? no — a fixed
 > **DAG**; autonomy = **HITL** (abstains to `needs_review` on low confidence);

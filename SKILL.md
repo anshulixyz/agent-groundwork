@@ -35,10 +35,16 @@ skip straight to code**:
 2. **Build** against [`PLAYBOOK.md`](./PLAYBOOK.md) — the 8 competencies, each with
    practices, what to **measure**, and what to **reuse**.
 
-3. **Prove + ship** using [`CHECKLIST.md`](./CHECKLIST.md). Especially: an eval set
-   from day one (honest about small-n), **test at the real boundary** (HTTP/tool
-   I/O, not just internals), CI gates, fail-closed outputs, and a written list of
-   honest limits.
+3. **Make it safe** with [`GUARDRAILS-AND-SECURITY.md`](./GUARDRAILS-AND-SECURITY.md):
+   treat all external text as untrusted data (prompt-injection is OWASP #1), apply
+   defense-in-depth, and **keep the agent inside its rules** — least-privilege tools,
+   no action outside scope, human gate on irreversible actions.
+
+4. **Prove it** with [`BENCHMARKING.md`](./BENCHMARKING.md) + [`CHECKLIST.md`](./CHECKLIST.md):
+   a task eval from day one (honest about small-n; a public suite only for context),
+   multi-run + multi-dimensional (accuracy · cost · latency · safety), a red-team
+   suite, **test at the real boundary** (HTTP/tool I/O, not internals), CI gates,
+   fail-closed outputs, and a written list of honest limits.
 
 ## Rules this skill enforces
 - **Simplest thing that works first** — add agency/complexity only when deterministic
@@ -52,7 +58,8 @@ skip straight to code**:
 
 ## Files
 `README.md` (overview) · `DECIDE-FIRST.md` (start here) · `PATTERNS.md` ·
-`PLAYBOOK.md` · `OSS-LANDSCAPE.md` · `CHECKLIST.md`.
+`PLAYBOOK.md` · `GUARDRAILS-AND-SECURITY.md` · `BENCHMARKING.md` ·
+`OSS-LANDSCAPE.md` · `CHECKLIST.md`.
 
 > Sources are cited inline in each doc (Anthropic Building Effective Agents,
 > 12-Factor Agents, framework/eval/memory comparisons). Replace recommendations with

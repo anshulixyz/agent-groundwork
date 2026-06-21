@@ -16,6 +16,16 @@ and the 2026 framework/eval/memory landscape — and uses **ClaimLens** (a 24-ho
 hackathon project) as *one worked example*, including where it fell short. It is not
 a pitch for any one tool or for ClaimLens.
 
+```mermaid
+flowchart LR
+  A["DECIDE-FIRST<br/>autonomy · pattern · reuse"] --> B["PATTERNS<br/>shape it"]
+  B --> C["PLAYBOOK<br/>8 competencies"]
+  C --> D["GUARDRAILS &amp; SECURITY<br/>keep it in its rules"]
+  C --> E["BENCHMARKING<br/>measure honestly"]
+  D --> F["CHECKLIST<br/>ship gate"]
+  E --> F
+```
+
 ## How to use it
 
 1. **Before writing code**, run [`DECIDE-FIRST.md`](./DECIDE-FIRST.md) — the
@@ -25,9 +35,14 @@ a pitch for any one tool or for ClaimLens.
    closed-loop / DAG / self-healing / autonomous / human-in-the-loop).
 3. Build against the eight competencies in [`PLAYBOOK.md`](./PLAYBOOK.md) — each with
    **practices**, **what to measure**, and **what to reuse instead of building**.
-4. Don't reinvent: [`OSS-LANDSCAPE.md`](./OSS-LANDSCAPE.md) is the curated,
+4. Make it safe: [`GUARDRAILS-AND-SECURITY.md`](./GUARDRAILS-AND-SECURITY.md) —
+   prompt-injection defense + how to keep the agent **inside its rules** (least
+   privilege, containment, human gates on irreversible actions).
+5. Prove it: [`BENCHMARKING.md`](./BENCHMARKING.md) — the standardized agent
+   benchmarks *and* the honest task-eval methodology (why a leaderboard isn't enough).
+6. Don't reinvent: [`OSS-LANDSCAPE.md`](./OSS-LANDSCAPE.md) is the curated,
    source-cited map of frameworks/libraries per competency.
-5. Gate yourself with [`CHECKLIST.md`](./CHECKLIST.md) before you call it done.
+7. Gate yourself with [`CHECKLIST.md`](./CHECKLIST.md) before you call it done.
 
 ## What's here
 
@@ -36,6 +51,8 @@ a pitch for any one tool or for ClaimLens.
 | [DECIDE-FIRST.md](./DECIDE-FIRST.md) | The pre-build decision framework + a fill-in spec. **Start here.** |
 | [PATTERNS.md](./PATTERNS.md) | Agent shapes & when each fits (incl. closed-loop · DAG · self-healing · autonomous · HITL) |
 | [PLAYBOOK.md](./PLAYBOOK.md) | The 8 competencies → practices · metrics · what to reuse |
+| [GUARDRAILS-AND-SECURITY.md](./GUARDRAILS-AND-SECURITY.md) | Prompt-injection defense, defense-in-depth, **agent containment / least privilege** (keep it in its rules) |
+| [BENCHMARKING.md](./BENCHMARKING.md) | Standardized agent benchmarks (GAIA, SWE-bench, τ²-bench…) + honest task-eval methodology |
 | [OSS-LANDSCAPE.md](./OSS-LANDSCAPE.md) | Curated, cited frameworks/libraries — reuse, don't rebuild |
 | [CHECKLIST.md](./CHECKLIST.md) | One-page pre-flight before shipping |
 | [SKILL.md](./SKILL.md) | Packaged as a Claude Code skill (open-source it as-is) |
