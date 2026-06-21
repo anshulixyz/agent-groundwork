@@ -7,6 +7,9 @@ here — and is honest about the stages this playbook *points to* rather than te
 (the hands-on coding of foundations/serving belongs in tutorials, not a decision
 playbook).
 
+> **Want to *do* each rung?** [`STARTERS.md`](./STARTERS.md) has a tiny hands-on
+> starter (a few lines of code or a linked quickstart) for every stage below.
+
 | Stage | Focus | Where in Groundwork | Coverage |
 |---|---|---|---|
 | **1 · Python + async foundations** | asyncio, FastAPI, event-driven, error handling, API integration | *prerequisite* — language-agnostic here; see FastAPI/asyncio docs | ⛳ prereq |

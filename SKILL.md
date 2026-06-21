@@ -57,8 +57,9 @@ skip straight to code**:
 - **No secrets in artifacts**; **scoped commits**; **keep a decision trail**.
 
 ## Files
-`README.md` (overview) · `LEARNING-PATH.md` (12-stage ladder) · `DECIDE-FIRST.md`
-(start here) · `AGENT-TYPES.md` · `PATTERNS.md` · `ARCHITECTURE-REFERENCES.md` ·
+`README.md` (overview) · `LEARNING-PATH.md` (12-stage ladder) · `STARTERS.md`
+(hands-on stubs per stage) · `DECIDE-FIRST.md` (start here) · `AGENT-TYPES.md` ·
+`PATTERNS.md` · `ARCHITECTURE-REFERENCES.md` ·
 `PLAYBOOK.md` · `GUARDRAILS-AND-SECURITY.md` · `BENCHMARKING.md` · `PRODUCTION.md` ·
 `OSS-LANDSCAPE.md` · `CHECKLIST.md`.
 

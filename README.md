@@ -53,13 +53,15 @@ flowchart LR
 
 > **New to this?** Climb it as a curriculum — [`LEARNING-PATH.md`](./LEARNING-PATH.md)
 > maps a 12-stage agent-engineering ladder (foundations → tool calling → memory →
-> orchestration → HITL → evals → observability → security → production) onto these docs.
+> orchestration → HITL → evals → observability → security → production) onto these docs,
+> and [`STARTERS.md`](./STARTERS.md) gives a tiny hands-on stub for each rung.
 
 ## What's here
 
 | File | What it's for |
 |---|---|
 | [LEARNING-PATH.md](./LEARNING-PATH.md) | The 12-stage agent-engineering ladder mapped to these docs. **New here? Start here.** |
+| [STARTERS.md](./STARTERS.md) | A tiny **hands-on starter** (code stub / quickstart) for each of the 12 stages — do each rung in minutes |
 | [DECIDE-FIRST.md](./DECIDE-FIRST.md) | The pre-build decision framework + a fill-in spec. **Already building? Start here.** |
 | [AGENT-TYPES.md](./AGENT-TYPES.md) | The **kinds** of agents (copilot, RAG, tool, research, coding, verification, computer-use, multi-agent…) → which shape/autonomy each wants |
 | [PATTERNS.md](./PATTERNS.md) | Agent shapes & when each fits (incl. closed-loop · DAG · self-healing · autonomous · HITL) |
